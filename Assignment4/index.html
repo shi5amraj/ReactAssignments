@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <title>Assignment4</title>
+</head>
+<body>
+    <div id ="root">
+
+    </div>
+    <script type="text/babel">
+        var styling = {
+            // border : "2px solid red",
+            padding : "2px",
+            width : "500px",
+            height : "500px",
+            display : "flex",
+            justifyContent : "center",
+            flexDirection : "column",
+            alignItems : "center",
+            boxShadow : "inset 0 0 10px black",
+            marginLeft : "30%",
+            marginTop : "5%",
+            borderRadius : "8px"
+
+        }
+        // var styling1 = {
+
+        // }
+        var button = {
+            // border : "2px solid red",
+            width:"275px",
+            height : "40px",
+            backgroundColor : "green",
+            fontWeight : "800",
+            boxShadow : "inset 0 0 10px black",
+            borderRadius : "5px",
+            color : "white"
+        }
+        var input = {
+            // border : "2px solid red",
+            width : "270px",
+            height : "30px",
+            fontWeight : "800",
+            fontSize : "800",
+            boxShadow : "inset 0 0 10px gray",
+            borderRadius : "5px"
+
+        }
+        var form = <div style = {styling}>
+            <h1>LOGIN</h1>
+            <p>Please enter your creadentials to login.</p>
+            <input id = "user" type = "text" placeHolder = "Username"style = {input}/>
+            <br/>
+            <input type = "password" placeHolder = "Password" style = {input}/>
+            <br/>
+            <button onclick = "clickME()"style = {button}>LOGIN</button>
+            <br/>
+            <p>Not Register ? Create Account</p>
+            </div>
+            ReactDOM.render(form,document.getElementById('root'))
+    </script>
+</body>
+</html>
