@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <title>Assignment1</title>
+</head>
+<body>
+    <div id ="root">
+
+    </div>
+    <script>
+        let div1 = React.createElement('div',{
+            style : {
+                position: 'absolute',
+                left:'25%',
+                // top:'5%',
+                width:620,
+                // height:800,
+                display:'flex',
+                flexDirection:'column',
+                alignText:'flex-start',
+                justifyContent:'center',
+                boxShadow:'0 0 10px black',
+                borderRadius : '8px',
+                        //  inset:'3px 3px 3px 3px black'
+                padding:"20px",
+                margin:'20px',
+                fontWeight:700,
+                // backgroundColor:'black'
+
+            }
+
+          },[
+            React.createElement('h1',null,"Topics Covered"),
+            React.createElement('p',null,"The followings is a list of all topics we covered in the MDN learning area."),
+        // ])
+        // let div2 = React.createElemrnt('div',null,[
+            React.createElement('h3',{style: {color: "blue",textDecoration:"underline"}},"Getting Started with the Web"),
+            React.createElement('p',null,"Provides a practical introduction to Web development for complete beginners."),
+            React.createElement('h3',{style: {color: "blue",textDecoration:"underline"}},"HTML-Structuring the Web"),
+            React.createElement('p',null,"HTML is the language that we use to structure the different parts of our content and define what there meaning or purpose is.This topic teaches HTML in detail."),
+            React.createElement('h3',{style: {color: "blue",textDecoration:"underline"}},"CSS-Styling the Web"),
+            React.createElement('p',null,"CSS is the language that we use to control our web content's style and layout, as well as adding behavior like animation.This topic provides comprehensive coverage of CSS.")
+
+        ])
+         
+        ReactDOM.render(div1,document.getElementById('root'))
+        // ReactDOM.render(div2,document.getElemrentById('root'))
+
+    </script>
+    
+</body>
+</html>
