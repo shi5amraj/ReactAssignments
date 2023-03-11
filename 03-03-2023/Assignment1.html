@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Template Doc</title>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+
+    <script>
+       let h1= React.createElement('h1',null,"Topics Covered")
+       let a1=React.createElement('a',null,"Getting Started With Web")
+       let p1=React.createElement('p',null,"Provides a practical to web fundamental for complete begainers")
+       let a2=React.createElement('a',null,"HTML-Structuring The Web")
+       let p2=React.createElement('p',null,"HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is.")
+
+       let a3=React.createElement('a',null,"CSS-Styling The Web")
+       let p3=React.createElement('p',null,"CSS is the language that we use to Control our web content style and layout as well as adding behaviour like animation .Tis topic provide comprehensive knowledge of CSS")
+     
+
+       let allElements=[h1,a1,p1,a2,p2,a3,p3]
+
+       ReactDOM.render(allElements,document.getElementById('root'))
+
+    </script>
+    
+</body>
+</html>
