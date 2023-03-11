@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <title>Assignment3</title>
+</head>
+<body>
+    <div id ="root">
+
+    </div>
+    <script>
+        var card = React.createElement('div',{style : {
+            // border:'2px solid red',
+            width :'300px',
+            padding : '20px',
+            display:'flex',
+            flexDirection : 'column',
+            justifyContent:'center',
+            alignItems:'center',
+            textAlign : 'center',
+            marginLeft:'35%',
+            marginTop:'3%',
+            borderRadius : '8px',
+            boxShadow:'inset 0 0 10px black'
+
+        }
+    }
+    ,[
+        React.createElement(
+        "img",
+        {src : "./shivam_profile_img-removebg-preview.png",width : "100%",heigth : "100%"},null),
+        React.createElement('h1',null,"Kumar  Shivam"),
+        React.createElement('p',null,"Software Developer")
+
+        ])
+        ReactDOM.render(card,document.getElementById('root'))
+    </script>
+    
+</body>
+</html>
