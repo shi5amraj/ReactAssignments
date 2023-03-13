@@ -1,0 +1,45 @@
+
+.features
+{
+    width: 50%;
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.featuresheading
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuresimg
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.img
+{
+    width: 80px;
+    height: 80px;
+}
+
+.business
+{
+    width: 80%;
+    height:30%;
+
+  
+    background-image: url(http://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/Business%20Fundamentals.jpg&w=1200&h=630);
+}
