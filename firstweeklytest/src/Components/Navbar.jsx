@@ -12,7 +12,7 @@ function Navbar(){
             <p>About Us</p>
             <p>Styleguide</p>
             <p>Blog</p>
-            <p>Contact Us</p>
+            <p>Contact Us </p>
 
         </div>
 
