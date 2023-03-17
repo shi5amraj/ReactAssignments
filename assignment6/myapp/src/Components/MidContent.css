@@ -1,0 +1,50 @@
+
+.midMainDiv
+{
+
+    width: 100%;
+    height: 40%;
+    background-color: rgb(2, 1, 39);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  
+}
+.topHeading
+{   height: 10%;
+    width: 60%;
+    font-weight: bolder;
+    font-size: xxx-large;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description
+{
+    height: 20%;
+    width: 25%;
+    font-size: small;
+    font-weight: 500;
+    margin-left: 90px;
+    
+    
+    
+}
+.btn
+{
+
+    width: 15%;
+    height: 50%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: green;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
