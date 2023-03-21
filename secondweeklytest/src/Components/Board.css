@@ -1,0 +1,17 @@
+
+.board-row
+{
+
+ height: 100px;
+display: flex;
+justify-content: center;
+align-items: center; 
+    
+}
+.status
+{
+width: 500px;
+font-size: xx-large;
+font-weight: bold;
+
+}
