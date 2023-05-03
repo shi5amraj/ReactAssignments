@@ -4,9 +4,14 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
 import { AiOutlineInstagram,AiFillTwitterCircle } from "react-icons/ai"
 import { FaFacebook } from "react-icons/fa"
 import {useEffect} from "react";
+import { useState } from "react";
 
 function Home() {
-    const url = 'https://spotify23.p.rapidapi.com/search/?type=playlists&offset=0&limit=10&numberOfTopResults=5';
+
+   const [playlist,setPlayList]=useState([]);
+   const [podcasts,setPodcasts]=useState([]);
+
+    const url = 'https://spotify23.p.rapidapi.com/search/?q=%3CREQUIRED%3E&type=multi&offset=0&limit=5&numberOfTopResults=5';
     const options = {
         method: 'GET',
         headers: {
@@ -14,26 +19,27 @@ function Home() {
             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         }
     };
+    const myasyncfun= async ()=>
+    {
+       try {
+           
+           const response = await fetch(url, options);
+           const result = await response.json();
+           setPlayList(result.playlists.items)
+           setPodcasts(result.podcasts.items)
+          
+           console.log(result.podcasts.items)
+
+       } catch (error) {
+           console.error(error);
+       }
+
+    }
 
     useEffect( ()=>
     {   
-         const myasyncfun= async ()=>
-         {
-            try {
-                
-                const response = await fetch(url, options);
-                const result = await response.json();
-                console.log(result);
-            } catch (error) {
-                console.error(error);
-            }
-
-         }
-         myasyncfun();
-
        
-
-
+         myasyncfun();
 
     },[])
     
@@ -58,55 +64,32 @@ function Home() {
 
             </div>
             <div className="home-container-focus-div">
+
+               
                 <div className="card-heading-div">
                     <span>Focus</span>
                     <span className="span2">show all</span>
 
                 </div>
                 <div className="card-div">
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
+
+
+                {
+                    playlist.map((elem)=>{
+                    return(
+                        <div className="card">
+                        <img src={elem.data.images.items[0].sources[0].url} alt="" />
+                        <h6>{elem.data.name}</h6>
+                        <span>{elem.data.owner.name}</span>
                     </div>
 
+                    )
 
-
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
-
-
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
-
-
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
-
-
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
-
+                    })
+                }
+                    
+                    
                 </div>
-
-
-
-
-
-
-
 
 
 
@@ -119,40 +102,35 @@ function Home() {
 
                 </div>
                 <div className="card-div">
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
+               {
+                playlist.map((elem)=>{
+
+                    return(
+                  <div className="card">
+                       <img src={elem.data.images.items[0].sources[0].url} alt="" />
+                        <h6>{elem.data.name}</h6>
+                        <span>{elem.data.owner.name}</span>
                     </div>
 
+                    )
+
+                })
+               }
+
+                    
 
 
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
+
+                    
 
 
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
+                    
 
 
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
+                    
 
 
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
+                    
 
                 </div>
 
@@ -165,41 +143,31 @@ function Home() {
 
                 </div>
                 <div className="card-div">
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
+                {
+                    podcasts.map((elem)=>{
+                    return(
+                        <div className="card">
+                        <img src={elem.data.coverArt.sources[0].url} alt="" />
+                        <h6>{elem.data.publisher.name}</h6>
+                        <span>{elem.data.name}</span>
                     </div>
 
+                    )
+
+                    })
+                }
 
 
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
+
+                    
 
 
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
+                   
+
+                   
 
 
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
-
-
-                    <div className="card">
-                        <img src="https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=" alt="" />
-                        <h6>Peaceful Piano</h6>
-                        <span>Relax and indulge with beautiful piano pieces</span>
-                    </div>
-
+                    
                 </div>
 
             </div>
