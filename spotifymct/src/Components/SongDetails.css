@@ -1,0 +1,101 @@
+
+.song-details-container-div
+{
+    width: 80%;
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+  
+   background-color: #1D1D1D;
+   color: white;
+}
+.songdetails-top-container-div
+{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  background-image: url("https://wallpapers.com/images/featured/spotify-gxhpo846gm70jwqc.webp");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.songdetails-top-div
+{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.songdetails-top-div .span1
+{  
+   color: white;
+   font-size: medium;
+   font-weight: bold;
+
+}
+
+.songdetails-top-div .span2
+{  
+   color: white;
+   font-size: xxx-large;
+   font-weight: bolder;
+
+}
+
+.songdetails-mid-container-div 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.songdetails-mid-container-song-list-div
+{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+    
+}
+.songdetails-mid-container-song-list-div-data
+{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    
+  
+
+}
+.title
+{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.album
+{
+    width: 20%;
+}
+.date
+{
+    width: 20%;
+}
+.duration
+{
+    width: 20%;
+}

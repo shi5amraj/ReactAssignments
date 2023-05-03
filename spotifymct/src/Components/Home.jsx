@@ -5,6 +5,7 @@ import { AiOutlineInstagram,AiFillTwitterCircle } from "react-icons/ai"
 import { FaFacebook } from "react-icons/fa"
 import {useEffect} from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -43,7 +44,13 @@ function Home() {
 
     },[])
     
+    const clickCard=()=>
+    {
+         
+       <Link  to="/songdetails"></Link>
 
+
+    }
 
 
 
@@ -77,12 +84,13 @@ function Home() {
                 {
                     playlist.map((elem)=>{
                     return(
+                        <Link to="/songdetails">
                         <div className="card">
                         <img src={elem.data.images.items[0].sources[0].url} alt="" />
                         <h6>{elem.data.name}</h6>
                         <span>{elem.data.owner.name}</span>
                     </div>
-
+                    </Link>
                     )
 
                     })
@@ -106,32 +114,19 @@ function Home() {
                 playlist.map((elem)=>{
 
                     return(
+                        <Link to="/songdetails">
                   <div className="card">
                        <img src={elem.data.images.items[0].sources[0].url} alt="" />
                         <h6>{elem.data.name}</h6>
                         <span>{elem.data.owner.name}</span>
                     </div>
+                    </Link>
 
                     )
 
                 })
                }
-
-                    
-
-
-
-                    
-
-
-                    
-
-
-                    
-
-
-                    
-
+   
                 </div>
 
 
@@ -146,11 +141,13 @@ function Home() {
                 {
                     podcasts.map((elem)=>{
                     return(
-                        <div className="card">
+                        <Link to="/songdetails">
+                        <div className="card" >
                         <img src={elem.data.coverArt.sources[0].url} alt="" />
                         <h6>{elem.data.publisher.name}</h6>
                         <span>{elem.data.name}</span>
-                    </div>
+                        </div>
+                    </Link>
 
                     )
 
