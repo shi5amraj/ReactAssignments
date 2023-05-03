@@ -3,7 +3,7 @@
 import "./Search.css"
 import { BsChevronLeft, BsChevronRight, BsSearch } from "react-icons/bs"
 
-import { AiOutlineInstagram,AiFillTwitterCircle } from "react-icons/ai"
+import { AiOutlineInstagram, AiFillTwitterCircle } from "react-icons/ai"
 import { FaFacebook } from "react-icons/fa"
 function Search() {
 
@@ -30,108 +30,108 @@ function Search() {
             </div>
 
             <div className="search-container-card-container" >
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
-                <div className="card" style={{backgroundImage:"url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')"}}>
+                <div className="card" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1180357593/photo/his-mind-always-wanders-to-success.jpg?b=1&s=170667a&w=0&k=20&c=7cmlHm5_50geYH93xIE3_kIFHfFW_9LPC_euJA0w1Go=')" }}>
                     <h3>Podcast</h3>
-                   
+
                 </div>
 
-             
+
 
             </div>
 
             <div className="search-container-footer-container">
 
-            <div className="footer-top">
-                  <div className="footer-top-left">
-                    <h5>Company</h5>
-                    <span>About</span>
-                    <span>Jobs</span>
-                    <span>For the Record</span>
+                <div className="footer-top">
+                    <div className="footer-top-left">
+                        <h5>Company</h5>
+                        <span>About</span>
+                        <span>Jobs</span>
+                        <span>For the Record</span>
 
-                  </div>
-                  <div className="footer-top-mid1">
-                  <h5>Communities</h5>
-                    <span>For Artist</span>
-                    <span>Developers</span>
-                    <span>Advertising</span>
-                    <span>Investort</span>
-                    <span>Vendors</span>
-                    <span>Spotify For Work</span>
-                    
-                  </div>
-                  <div className="footer-top-mid2">
-                  <h5>Useful Links</h5>
-                    <span>Support</span>
-                    <span>Free Mobile App</span>
-                  </div>
-                  <div className="footer-top-right">
+                    </div>
+                    <div className="footer-top-mid1">
+                        <h5>Communities</h5>
+                        <span>For Artist</span>
+                        <span>Developers</span>
+                        <span>Advertising</span>
+                        <span>Investort</span>
+                        <span>Vendors</span>
+                        <span>Spotify For Work</span>
 
-                   <AiOutlineInstagram size={30}/>
-                    <AiFillTwitterCircle size={30}/>
-                    <FaFacebook size={30}/>
-                  </div>
+                    </div>
+                    <div className="footer-top-mid2">
+                        <h5>Useful Links</h5>
+                        <span>Support</span>
+                        <span>Free Mobile App</span>
+                    </div>
+                    <div className="footer-top-right">
+
+                        <AiOutlineInstagram size={30} />
+                        <AiFillTwitterCircle size={30} />
+                        <FaFacebook size={30} />
+                    </div>
 
                 </div>
                 <div className="footer-bottom">
-                 <hr style={{backgroundColor:"white",height:"2px"}}/>
+                    <hr style={{ backgroundColor: "white", height: "2px" }} />
 
-                 <div ><span>© 2023 Spotify AB</span></div>
+                    <div ><span>© 2023 Spotify AB</span></div>
 
                 </div>
 
